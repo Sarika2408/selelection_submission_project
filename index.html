@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <h2 class="main-heading">YAY! Its BOGO</h2>
+        <hr class="solid" />
+      </header>
+      <main>
+        <!-- card 1 collapsed-->
+        <article id="collapsed-card-one" class="card flex-center">
+          <div class="collapsed-card-content">
+            <section class="collapsed-card-selection flex-center">
+              <input
+                id="first-collapsed-radio"
+                type="radio"
+                name="color"
+                value="red"
+              />
+            </section>
+            <section class="collapsed-card-left">
+              <div class="collapsed-qty-discount">
+                <h6 class="collapsed-qty">1 unit</h6>
+                <span class="collapsed-discount">10% off</span>
+              </div>
+              <span class="collapsed-card-price-label">Standard price</span>
+            </section>
+            <section class="collapsed-card-right">
+              <div class="discounted-mrp-price-group">
+                <span class="discounted-price">$10.00 USD</span>
+                <del class="mrp">$24.00 USD</del>
+              </div>
+            </section>
+          </div>
+        </article>
+        <!-- card 1 expanded-->
+        <article id="expanded-card-one" class="card selected">
+          <!-- <div class="most-popular">MOST POPULAR</div> -->
+          <div class="collapsed-card-content">
+            <section class="collapsed-card-selection flex-center">
+              <input
+                id="first-expanded-radio"
+                type="radio"
+                name="color"
+                value="red"
+              />
+            </section>
+            <section class="collapsed-card-left">
+              <div class="collapsed-qty-discount">
+                <h6 class="collapsed-qty">1 unit</h6>
+                <span class="collapsed-discount">10% off</span>
+              </div>
+              <span class="collapsed-card-price-label">Standard price</span>
+            </section>
+            <section class="collapsed-card-right">
+              <div class="discounted-mrp-price-group">
+                <span class="discounted-price">$10.00 USD</span>
+                <del class="mrp">$24.00 USD</del>
+              </div>
+            </section>
+          </div>
+          <div class="size-color-selection-group">
+            <div class="row">
+              <div class="column">...</div>
+              <div class="column">Size</div>
+              <div class="column">Color</div>
+            </div>
+            <div class="row">
+              <div class="column">#1</div>
+              <div class="column">
+                <select>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+              </div>
+              <div class="column">
+                <select>
+                  <option value="black">Black</option>
+                  <option value="red">Red</option>
+                  <option value="blue">Blue</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column">#2</div>
+              <div class="column">
+                <select>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+              </div>
+              <div class="column">
+                <select>
+                  <option value="black">Black</option>
+                  <option value="red">Red</option>
+                  <option value="blue">Blue</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- card 2 collapsed-->
+        <article id="collapsed-card-two" class="card flex-center">
+          <div class="most-popular">MOST POPULAR</div>
+          <div class="collapsed-card-content">
+            <section class="collapsed-card-selection flex-center">
+              <input
+                id="second-collapsed-radio"
+                type="radio"
+                name="color"
+                value="red"
+              />
+            </section>
+            <section class="collapsed-card-left flex-left">
+              <div class="collapsed-qty-discount">
+                <h6 class="collapsed-qty">2 unit</h6>
+                <span class="collapsed-discount">20% off</span>
+              </div>
+              <!-- <span class="collapsed-card-price-label">Standard price</span> -->
+            </section>
+            <section class="collapsed-card-right">
+              <div class="discounted-mrp-price-group">
+                <span class="discounted-price">$18.00 USD</span>
+                <del class="mrp">$24.00 USD</del>
+              </div>
+            </section>
+          </div>
+        </article>
+        <!-- card 2 expanded-->
+        <article id="expanded-card-two" class="card selected">
+          <div class="most-popular">MOST POPULAR</div>
+          <div class="collapsed-card-content">
+            <section class="collapsed-card-selection flex-center">
+              <input
+                id="second-expanded-radio"
+                type="radio"
+                name="color"
+                value="red"
+              />
+            </section>
+            <section class="collapsed-card-left">
+              <div class="collapsed-qty-discount">
+                <h6 class="collapsed-qty">2 unit</h6>
+                <span class="collapsed-discount">20% off</span>
+              </div>
+              <span class="collapsed-card-price-label">Standard price</span>
+            </section>
+            <section class="collapsed-card-right">
+              <div class="discounted-mrp-price-group">
+                <span class="discounted-price">$18.00 USD</span>
+                <del class="mrp">$24.00 USD</del>
+              </div>
+            </section>
+          </div>
+          <div class="size-color-selection-group">
+            <div class="row">
+              <div class="column">...</div>
+              <div class="column">Size</div>
+              <div class="column">Color</div>
+            </div>
+            <div class="row">
+              <div class="column">#1</div>
+              <div class="column">
+                <select>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+              </div>
+              <div class="column">
+                <select>
+                  <option value="black">Black</option>
+                  <option value="red">Red</option>
+                  <option value="blue">Blue</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column">#2</div>
+              <div class="column">
+                <select>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+              </div>
+              <div class="column">
+                <select>
+                  <option value="black">Black</option>
+                  <option value="red">Red</option>
+                  <option value="blue">Blue</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- card 3 -->
+        <article id="collapsed-card-three" class="card flex-center">
+          <div class="collapsed-card-content">
+            <section class="collapsed-card-selection flex-center">
+              <input id="third-collapsed-radio" type="radio" name="color" value="red" />
+            </section>
+            <section class="collapsed-card-left flex-left">
+              <div class="collapsed-qty-discount">
+                <h6 class="collapsed-qty">3 unit</h6>
+                <span class="collapsed-discount">30% off</span>
+              </div>
+              <!-- <span class="collapsed-card-price-label">Standard price</span> -->
+            </section>
+            <section class="collapsed-card-right">
+              <div class="discounted-mrp-price-group">
+                <span class="discounted-price">$24.00 USD</span>
+                <del class="mrp">$24.00 USD</del>
+              </div>
+            </section>
+          </div>
+        </article>
+        <!-- card 2 expanded-->
+        <article id="expanded-card-three" class="card selected">
+          <div class="collapsed-card-content">
+            <section class="collapsed-card-selection flex-center">
+              <input
+                id="third-expanded-radio"
+                type="radio"
+                name="color"
+                value="red"
+              />
+            </section>
+            <section class="collapsed-card-left">
+              <div class="collapsed-qty-discount">
+                <h6 class="collapsed-qty">3 unit</h6>
+                <span class="collapsed-discount">30% off</span>
+              </div>
+              <span class="collapsed-card-price-label">Standard price</span>
+            </section>
+            <section class="collapsed-card-right">
+              <div class="discounted-mrp-price-group">
+                <span class="discounted-price">$24.00 USD</span>
+                <del class="mrp">$24.00 USD</del>
+              </div>
+            </section>
+          </div>
+          <div class="size-color-selection-group">
+            <div class="row">
+              <div class="column">...</div>
+              <div class="column">Size</div>
+              <div class="column">Color</div>
+            </div>
+            <div class="row">
+              <div class="column">#1</div>
+              <div class="column">
+                <select>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+              </div>
+              <div class="column">
+                <select>
+                  <option value="black">Black</option>
+                  <option value="red">Red</option>
+                  <option value="blue">Blue</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column">#2</div>
+              <div class="column">
+                <select>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+              </div>
+              <div class="column">
+                <select>
+                  <option value="black">Black</option>
+                  <option value="red">Red</option>
+                  <option value="blue">Blue</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <section class="total-group">
+           <span class="free-delivery">Free Delivery</span>
+           <span class="total-bill">Total : $18.00 USD</span>
+        </section>
+
+        <button type="button" class="btn-cart">+ Add to Cart</button>
+      </main>
+      <span class="powered-by">
+        <i>&copy; Powered by Pumper</i>
+      </span>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
